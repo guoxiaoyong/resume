@@ -1,0 +1,256 @@
+@page
+{
+    size: US-Letter;
+    margin: 3cm 1.5cm 1.5cm 1.5cm;
+
+	@footnotes {
+		border-top:			0.5pt solid black;
+		margin-top:			1mm;
+		padding-top:		1mm;
+    }
+	
+	@bottom
+	{
+		text-align:			right;
+		font-family:		"Minion";
+		font-size:			8pt;
+		font-weight:		normal;
+		font-style:			italic;
+		content:			"page "counter(page) " ";
+	}
+}
+
+
+
+
+/*
+================================================================================
+================================== Fonts =======================================
+================================================================================
+*/
+@font-face {
+	font-family:	"Minion";
+    font-style:		normal;
+    font-weight:	normal;
+	src:			url("minion_pro_regular.otf");
+}
+
+@font-face {
+	font-family:	"Minion";
+    font-style:		normal;
+    font-weight:	bold;
+	src:			url("minion_pro_bold.otf");
+}
+
+@font-face {
+	font-family:	"Minion";
+    font-style:		italic;
+    font-weight:	normal;
+	src:			url("minion_italic.ttf");
+}
+
+
+
+body
+{
+	counter-reset:			page 1;
+	font-size:				12pt;
+	line-height:			20pt;
+	font-family:			"Minion", "Georgia", serif;
+	font-weight:			normal;
+	font-style:				normal;
+}
+
+
+@media screen
+{
+	html
+	{
+		background:			#DDDDDD;
+	}
+	
+
+	body
+	{
+		background:			white;
+		width:				21cm;
+		border:				1px solid #BBBBBB;
+        padding-top:        3cm;
+		padding-left:		1cm;
+		padding-right:		1cm;
+		margin-left:		auto;
+		margin-right:		auto;
+	}
+	
+	.section
+	{
+		border-bottom:			1px dashed #BBBBBB;
+	}
+	
+	.chapter
+	{
+		border-bottom:			1px dashed #BBBBBB;
+	}
+}
+
+
+* {
+	font-family:			inherit;
+	font-size:				inherit;
+	line-height:			inherit;
+	text-align:				inherit;
+}
+
+
+
+h1,h2,h3,h4  {
+	font-family:			"Minion" "Myriad", sans-serif;
+	font-size:				22pt;
+	line-height:			24pt;
+}
+
+
+h1 {
+
+    font-size: 24pt;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+
+h2.section {
+    font-variant:    small-caps;
+	font-size:		 16pt;
+	color:			 #204a87;
+	border-bottom:	 1px solid #204a87;
+}
+
+.position {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.employer {
+   font-size: 12pt;
+}
+
+
+h3{
+	font-size:				11pt;
+	font-weight:			bold;
+}
+
+
+h4 {
+	font-size:				12pt;
+}
+
+tt { font-weight: bold; }
+
+img { 
+       /* prince-image-resolution: 100; 
+      prince-jpeg-quality: 80%;
+      */
+       
+}
+
+
+/*
+================================================================================
+================================ Body Text =====================================
+================================================================================
+*/
+
+p {
+	text-align:				justify;
+}
+        
+
+.italic {
+	font-style:				italic;
+}
+
+.bold {
+	font-weight:			bold;
+}
+
+.break {
+	page-break-inside:		always;
+}
+
+
+/*ol,ul {
+	page-break-inside:		avoid;
+}*/
+
+
+li {
+
+	text-align:				justify;
+	padding-bottom:			0.25cm;
+	padding-left:			0cm;
+	page-break-inside:		avoid;
+}
+
+/*
+================================================================================
+================================= Front Cover ==================================
+================================================================================
+*/
+
+.frontcover {
+	text-align:				center;
+	page:					section;
+    page-break-after:       always;
+}
+
+.frontcover h1 {
+	font-size:				24pt;
+	padding-top:			50mm;
+}
+
+.byline {
+	margin-top:				5mm;
+	text-align:				center;
+	font-size:				14pt;
+}
+
+.submitline {
+	margin-top:				100mm;
+	text-align:				center;
+	font-size:				14pt;
+}
+
+.section h1 {
+	font-size:				32pt;
+	text-align:				center;
+	padding-top:			50mm;
+	line-height:			1em;		
+}
+
+a {
+	text-decoration:none;
+	color:black;	
+}
+
+
+table {
+
+   margin: 0 auto;
+   border-collapse:collapse;
+}
+
+
+td {
+
+    padding: 5px;
+    margin: 5px;
+}
+
+

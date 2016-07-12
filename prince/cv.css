@@ -1,0 +1,32 @@
+
+
+h1 {
+
+    font-size: 200%;
+    text-align: center;
+    font-variant: small-caps;
+
+}
+
+
+h2.section {
+
+    font-variant: small-caps;
+}
+
+
+p.contact {
+
+   text-align: center;
+}
+
+
+span.position {
+
+   font-size: 120%;
+}
+
+span.employer {
+
+   font-weight: bold;
+}
